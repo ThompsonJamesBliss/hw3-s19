@@ -18,17 +18,18 @@ For the first part of the assignment, you will finish that on instabase. Follow 
 
 **(14 points total)** 
 
+Please use the given template to response. Hand writing is NOT accecptable.
 
 Some warmup questions:
 
-1. (2 points) **Q2.1**: You have a relation `R(A,B,C)` and functional dependencies 
+(2 points) **Q2.1**: You have a relation `R(A,B,C)` and functional dependencies 
   `C->A, A->B`
 
   * What are all the non-trivial functional dependencies in the closure
     that have  only one attribute on the right side?
   * What are all the keys of `R`?
 
-1. (3 points) **Q2.2**: You have a relation `S(A, B, C, D)` and functional dependencies 
+(3 points) **Q2.2**: You have a relation `S(A, B, C, D)` and functional dependencies 
   `AB->C, BC->D, CD->A, and AD->B`
 
   * What are all the non-trivial functional dependencies in the closure
@@ -79,22 +80,22 @@ Suppose we have the functional dependencies:
         date, store, vendor_no, itemno, invoice_line_no -> pack, sale_bottles, sale_dollars, sale_gallons, sale_liters
 
 
-1. (2 points) **Q2.3**: What are the keys in 'iowa'?
+(2 points) **Q2.3**: What are the keys in 'iowa'?
 
-1. (3 points) **Q2.4**: Decompose `iowa` into 3NF (Third Normal Form).  Write a few sentences to justify
+(3 points) **Q2.4**: Decompose `iowa` into 3NF (Third Normal Form).  Write a few sentences to justify
   why you chose the tables you did.  
 
-1. (2 points) **Q2.5**: Is your schema redundancy and anomaly free?  Justify your answer in
+(2 points) **Q2.5**: Is your schema redundancy and anomaly free?  Justify your answer in
    a few sentences.
 
-1. (2 points) **Q2.6**: We want to ensure that an order cannot purchase more than 10
+(2 points) **Q2.6**: We want to ensure that an order cannot purchase more than 10
    bottles (`bottle_qty`).  Can you enforce this using functional 
    dependencies?  Justify your answer
 
-1. (1 point) **Q2.7**: Let's verify whether `store` indeed determines the store name.   How many distinct `name` values 
+(1 point) **Q2.7**: Let's verify whether `store` indeed determines the store name.   How many distinct `name` values 
    exist for `store` number `2508` in the `iowa` dataset?  Solve this by running a SQL query.
 
-1. (1 point) **Q2.8**: In class, we discussed that functional dependencies (and constraints in general) cannot be
+(1 point) **Q2.8**: In class, we discussed that functional dependencies (and constraints in general) cannot be
   determined just by looking at data in the database.  
   Argue in one or two sentences whether or not `store -> name` is should actually be a functional dependency and why.  
 
