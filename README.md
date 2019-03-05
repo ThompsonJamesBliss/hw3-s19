@@ -11,7 +11,7 @@ You will then perform some normalization.
 
 
 # 1. SQL, the sequel
-For the first part of the assignment, you will finish that on instabase. Follow the instructions on [instabase](https://www.instabase.com/ewu/w4111-public/fs/Instabase%20Drive/HW3)
+For the first part of the assignment, you will finish that on instabase. Follow the instructions on [instabase](https://www.instabase.com/ewu/w4111-public/fs/Instabase%20Drive/HW3/)
 
 
 # 2. Normalization
