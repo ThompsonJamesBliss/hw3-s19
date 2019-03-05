@@ -40,43 +40,43 @@ The Iowa dataset has the following un-normalized schema:
 
 
         CREATE TABLE iowa (
+            address char(256),
+            bottle_volume_ml integer,
+            category char(256),
+            category_name char(256),
+            city char(256),
+            county char(256),
+            county_number char(256),
             date date,
-            convenience_store character varying(128),
-            store integer,
-            name character varying(128),
-            address character varying(128),
-            city character varying(128),
-            zipcode text,
-            store_location character varying(128),
-            county_number integer,
-            county character varying(128),
-            category integer,
-            category_name character varying(128),
-            vendor_no integer,
-            vendor character varying(128),
-            item text,
-            description character varying(128),
+            im_desc char(256),
+            invoice_line_no char(256),
+            itemno integer,
+            name char(256),
             pack integer,
-            liter_size integer,
-            state_btl_cost double precision,
-            btl_price double precision,
-            bottle_qty integer,
-            total double precision
+            sale_bottles integer,
+            sale_dollars double precision,
+            sale_gallons double precision,
+            sale_liters double precision,
+            state_bottle_cost double precision,
+            state_bottle_retail double precision,
+            store integer,
+            store_location char(256),
+            store_location_address char(256),
+            store_location_city char(256),
+            store_location_zip char(256),
+            vendor_name char(256),
+            vendor_no integer,
+            zipcode text
         );
-
-
-You can verify this by opening the sqlite3 prompt, and typing
-
-        .schema iowa
 
 Suppose we have the functional dependencies:
 
-        store -> convenience_store, address, name, city, zipcode, store_location
-                county_number, county
+        store -> address, name, city, zipcode, store_location, store_location_adress,
+                county_number, county, store_location_zip
         vendor_no -> vendor
         category -> category_name
-        item -> category, liter_size, description, state_btl_cost btl_price
-        date, store, vendor_no, item -> pack, bottle_qty, total
+        itemno -> category, bottle_volume_ml, im_desc, state_bottle_cost, state_bottle_retail
+        date, store, vendor_no, itemno, invoice_line_no -> pack, sale_bottles, sale_dollars, sale_gallons, sale_liters
 
 
 1. (2 points) **Q2.3**: What are the keys in 'iowa'?
