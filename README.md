@@ -5,9 +5,9 @@
 * worth 3.75% of your grade
 
 In this assignment it's time to get real!  You'll first flex your SQL
-muscles and re-perform [HW2](http://github.com/w4111/hw2)'s analyses by
+muscles by
 writing SQL and reflecting on the experience.  
-You will then perform some normalization.
+You will then perform some normalizations.
 
 
 # 1. SQL, the sequel
