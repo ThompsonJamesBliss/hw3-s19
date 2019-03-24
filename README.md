@@ -74,7 +74,7 @@ Suppose we have the functional dependencies:
 
         store -> address, name, city, zipcode, store_location, store_location_adress,
                 county_number, county, store_location_zip
-        vendor_no -> vendor
+        vendor_no -> vendor_name
         category -> category_name
         itemno -> category, bottle_volume_ml, im_desc, state_bottle_cost, state_bottle_retail
         date, store, vendor_no, itemno, invoice_line_no -> pack, sale_bottles, sale_dollars, sale_gallons, sale_liters
