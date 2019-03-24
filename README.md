@@ -73,7 +73,7 @@ The Iowa dataset has the following un-normalized schema:
 Suppose we have the functional dependencies:
 
         store -> address, name, city, zipcode, store_location, store_location_adress,
-                county_number, county, store_location_zip
+                county_number, county, store_location_zip, store_location_city
         vendor_no -> vendor_name
         category -> category_name
         itemno -> category, bottle_volume_ml, im_desc, state_bottle_cost, state_bottle_retail
